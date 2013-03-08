@@ -1,0 +1,1 @@
+void get_mouseinput(int * click, int * mousex, int * mousey);

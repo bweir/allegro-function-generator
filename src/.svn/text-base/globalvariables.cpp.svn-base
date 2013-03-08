@@ -1,0 +1,8 @@
+/// Copyright 2010 by Brett Weir
+
+#include "functiongenerator.h"
+
+extern const int bitdepth[] = {3, 4, 8, 16};
+extern const int height[] = {pow(2,bitdepth[0]), pow(2,bitdepth[1]), pow(2,bitdepth[2]), pow(2,bitdepth[3])};
+extern const int samplemult[] = {32, 16, 4, 1};
+extern const int samples[] = {SAMPLES/32, SAMPLES/16, SAMPLES/4, SAMPLES};

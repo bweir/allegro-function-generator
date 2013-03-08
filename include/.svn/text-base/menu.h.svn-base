@@ -1,0 +1,4 @@
+void display_menu (BITMAP * buffer, int power, int type, int * click, int totalchoices, int * selectedchoice, char ** choicename, char * title);
+void set_menu_cursor (int menulocation_x, int menulocation_y);
+void set_menu_cursor_x (int menulocation_x);
+void set_menu_cursor_y (int menulocation_y);

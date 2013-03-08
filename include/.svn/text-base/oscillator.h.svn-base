@@ -1,0 +1,78 @@
+
+/*! \struct oscillator
+    \brief This is the class that generates the values of stuff.
+
+    It is important to incorporate your mom into the equations you're
+    interested in attache-ing.  I will need to remind you of the utter
+    importance of revising bacon gritz before becoming an incumbent.
+*/
+struct oscillator {
+/*! \var active
+    Determines whether the oscillator is active. */
+    bool active;
+
+/*! \var note
+    The active note (0-127) */
+    int note;
+
+/*! Determines whether the oscillator is active. */
+    char selectedWaveform, selectedBitDepth, selectedSampleRate;
+
+    //Volume envelope (ADSR)
+    signed int level;
+    signed int targetLevel;
+    signed int targetIncrement;
+
+    unsigned char ADSRstate; // 4 states as indicated
+    signed int attack;
+    signed int decay;
+    signed int sustain;
+    signed int release;
+
+    signed int distortion;
+
+
+
+
+    //Phase accumulator
+    //Uses 16 bit real, 16 bit fractional fixed-point values.
+    unsigned int frequency;
+    unsigned int targetFrequency;
+
+    unsigned int phaseIncrement;    //How much to increment each cycle
+    unsigned int phaseAccumulator;  //Non-truncated accumulator
+    unsigned int phaseOffset;       //Truncated and scaled to fit within total samples
+
+
+
+
+    //Initializer
+    oscillator() {
+        active = 0;
+        note = -1;
+
+        selectedWaveform = 0;
+        selectedBitDepth = 3;
+        selectedSampleRate = 3;
+
+        frequency = 0;
+        targetFrequency = 0;
+
+        phaseIncrement = 0;
+        phaseOffset = 0;
+        phaseAccumulator = 0;
+
+        level = 0;
+        targetLevel = UNITY_FP;
+
+        ADSRstate = 0;
+
+        attack = UNITY_FP;
+        decay = UNITY_FP;
+        sustain = UNITY_FP;
+        release = UNITY_FP;
+
+        distortion = 0;
+    }
+
+};

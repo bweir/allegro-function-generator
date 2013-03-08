@@ -1,0 +1,12 @@
+/// Copyright 2010 by Brett Weir
+
+#include "functiongenerator.h"
+
+/*
+
+void oscillator_setFrequency(oscillator * pOsc, unsigned int freqvalue) {
+    pOsc->targetFrequency = freqvalue;
+    pOsc->frequency = pOsc->targetFrequency;
+    pOsc->phaseIncrement = pOsc->frequency/FCMIN;
+}
+*/
