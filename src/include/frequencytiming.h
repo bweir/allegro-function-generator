@@ -18,4 +18,3 @@
 */
 unsigned int * generate_frequency_table (void);
 unsigned int * get_frequency_table(void);
-void print_frequency_table_L (void);

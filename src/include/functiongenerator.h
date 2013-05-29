@@ -108,8 +108,6 @@ typedef union {
 
 
 
-#define CORESPEED           80000000
-
 #define SAMPLES             (FSMAX/FCMIN)
 #define SHIFTEDSAMPLES      ((FSMAX<<16)/FCMIN)
 #define fSAMPLES            (fFSMAX/fFCMIN)

@@ -43,17 +43,17 @@ int main(int argc, char *argv[]) {
     int selectedrate = TOTALRATES-1;
     int selectedwave[PERVOICE] = {0};
     int adsr[PERVOICE*ADSR_STATES] = {1};
-    char * adsrname[] = {"Attack","Decay","Sustain","Release"};
+    const char * adsrname[] = {"Attack","Decay","Sustain","Release"};
 
 
 
-    char * filtername[] = {"Low-Pass","ADSR"};
-    int totalfilters = 2, selectedfilter = 0;
+//    const char * filtername[] = {"Low-Pass","ADSR"};
+//    int totalfilters = 2, selectedfilter = 0;
 
     //Retrieve information about synthesizer
 
-    char ** wavename = get_wavenames();
-    char ** heightname = get_heightnames();
+    const char ** wavename = get_wavenames();
+    const char ** heightname = get_heightnames();
     unsigned int * freqtable = get_frequency_table();
 
     print_lookup (0, 3, samplemult[3]);

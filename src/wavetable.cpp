@@ -26,19 +26,19 @@ extern const int samples[];
 
 
 short int wavetable[TOTALWAVES*TOTALBITS*SAMPLES];
-char * wavename[] = {"Sine","Square","Ramp","Decay","Triangle"};
-char * heightname[] = {"3","4","8","16"};
+const char * wavename[] = {"Sine","Square","Ramp","Decay","Triangle"};
+const char * heightname[] = {"3","4","8","16"};
 int wavedefined = 0;
 
 
 
 
 
-char ** get_wavenames () {
+const char ** get_wavenames () {
     return wavename;
 }
 
-char ** get_heightnames () {
+const char ** get_heightnames () {
     return heightname;
 }
 

@@ -36,7 +36,7 @@ void set_menu_cursor_y (int menulocation_y) {
 }
 
 
-void display_menu (BITMAP * buffer, int power, int type, int * click, int totalchoices, int * selectedchoice, char ** choicename, char * title) {
+void display_menu (BITMAP * buffer, int power, int type, int * click, int totalchoices, int * selectedchoice, const char ** choicename, const char * title) {
 
     int x = pointx, y = pointy;
     pointy += TEXTHEIGHT;

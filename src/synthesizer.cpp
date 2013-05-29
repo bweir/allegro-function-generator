@@ -79,7 +79,7 @@ AUDIOSTREAM * initialize_soundsystem() {
       audiostatus = "Couldn't create audio stream - audio is off";
    }
 
-   short int * wavetable = get_wavetable();
+//   short int * wavetable = get_wavetable();
 
    return stream;
 }

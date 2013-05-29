@@ -17,8 +17,8 @@
     <http://www.gnu.org/licenses/>.
 */
 
-char ** get_wavenames ();
-char ** get_heightnames ();
+const char ** get_wavenames ();
+const char ** get_heightnames ();
 short int * get_wavetable();
 
 short int * generate_lookup ();
