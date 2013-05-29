@@ -1,4 +1,0 @@
-void plot_waveform(BITMAP * buffer, int plotx, int ploty, int * w, int * h, int height, int samples,
-                    int selectedn, int nlimit, short int * pointy, const char * wavename);
-void plot_FFT(BITMAP * buffer, int plotx, int ploty, int * w, int * h, int height, int samples,
-                    int selectedn, int nlimit, unsigned short int * pointy, const char * wavename);

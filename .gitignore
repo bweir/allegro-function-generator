@@ -1,1 +1,6 @@
-bin
+*.o
+*.swp
+config.log
+allegfuncgen
+sconstruct
+.sconsign.dblite

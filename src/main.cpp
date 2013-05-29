@@ -282,3 +282,4 @@ int main(int argc, char *argv[]) {
     allegro_exit();
     return 0;
 }
+END_OF_MAIN()
