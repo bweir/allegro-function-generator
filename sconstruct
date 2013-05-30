@@ -1,5 +1,5 @@
 import os;
-env = Environment( ENV = os.environ )
+env = Environment( ENV = os.environ, CPPPATH=['src/include'])
 
 config = env.Configure()
 
@@ -7,5 +7,5 @@ flags = [ '-g', '-Wall', '-fno-rtti', '-Woverloaded-virtual', '-O' ]
 env.Append( CCFLAGS = flags )
 
 env.ParseConfig( 'allegro-config --libs' )
-env.Program('allegfuncgen',Glob('src/*.cpp'), CPPPATH=['src/include'])
+env.Program('allegfuncgen',Glob('src/*.cpp'))
 
